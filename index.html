@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- nav bar for smaller screen  -->
+    <nav
+      class="h-24 w-full bg-white text-gray-800 fixed bottom-0 py-6 px-4 shadow-lg shadow-slate-700 lg:hidden"
+    >
+      <div class=" flex justify-around items-center navMain">
+        <a href="#"
+          ><i
+            class=" nav-active fa-solid fa-house p-2 bg-nav  text-xl rounded-lg"
+          ></i
+        ></a>
+        <a href="#"
+          ><i class=" nav-active p-2 fa-solid fa-calendar-days text-xl rounded-lg "></i
+        ></a>
+        <a href="#"
+          ><i class=" nav-active p-2 fa-solid fa-database text-xl rounded-lg "></i
+        ></a>
+        <a href="#"><i class=" nav-active p-2 fa-solid fa-user text-xl rounded-lg "></i></a>
+        <a href="#"
+          ><i class=" nav-active fa-solid p-2 fa-magnifying-glass text-xl rounded-lg"></i
+        ></a>
+      </div>
+    </nav>
+
+    <!-- nav bar for big screen -->
+    <!-- FIRST DIV OPEN -->
+    <div>
+      <nav
+        class="h-screen w-[10%] p-4 lg:flex lg:flex-col lg:gap-[100px] hidden md:hidden lg:block shadow-lg lg:fixed lg:bg-white"
+      >
+        <div class="flex flex-col items-center justify-center gap-8">
+          <img
+            class="w-10"
+            src="https://image.shutterstock.com/image-photo/color-butterfly-isolated-on-white-260nw-570560110.jpg"
+          />
+          <a href="#"
+            ><i class="fa-solid fa-magnifying-glass text-2xl text-gray-400"></i
+          ></a>
+        </div>
+        <div class="flex flex-col items-center gap-10 " id="navMain-desktop">
+          <a href="#"
+            ><i
+              class="nav-active fa-solid fa-house p-2  text-2xl rounded-lg bg-nav"
+            ></i
+          ></a>
+          <a href="#"
+            ><i class="nav-active fa-solid fa-calendar-days text-2xl p-2 "></i
+          ></a>
+          <a href="#"
+            ><i class="nav-active fa-solid fa-database text-2xl p-2 "></i
+          ></a>
+          <a href="#"
+            ><i class="nav-active fa-solid fa-user text-2xl p-2 "></i
+          ></a>
+          <a href="#" class="mt-20">
+            <i class="nav-active fa-solid fa-bell text-2xl p-2 "></i
+          ></a>
+          <a href="#">
+            <i class="nav-active fa-solid fa-file text-2xl p-2 "></i
+          ></a>
+        </div>
+        
+      </nav>
+    </div>
+    <!-- fIRST DIV CLOSED -->
+
+    <!-- SECOND DIV OPEN -->
+    <div
+      class="flex flex-col lg:flex-row lg:relative lg:left-[150px] lg:w-[89%]"
+    >
+      <!-- Profile section -->
+      <div class="lg:w-[30%] w-full p-8 ">
+        <div class="md:hidden ">
+          <i class="fa-solid fa-bell text-3xl text-gray-400 float-right"></i>
+        </div>
+        <div>
+          <div class="flex gap-4 items-center">
+            <img
+              class="h-20 md:h-28"
+              src="https://marketplace.canva.com/EAFXS8-cvyQ/1/0/1600w/canva-brown-and-light-brown%2C-circle-framed-instagram-profile-picture-2PE9qJLmPac.jpg"
+            />
+            <div class="">
+              <h1 class="font-bold text-2xl md:text-3xl">Hi,Mike</h1>
+              <p>Welcome Back</p>
+            </div>
+          </div>
+
+          <div class="bg-gray-50 p-8 rounded shadow-xl">
+            <h3>Today</h3>
+            <h1 class="text-3xl font-bold">$19,932</h1>
+            <p>Account Balance</p>
+            <div
+              class="flex items-center md:flex-col md:items-start gap-6 my-5"
+            >
+              <div>
+                <h1 class="font-black">$4,000</h1>
+                <p>year-to-date</p>
+              </div>
+              <div>
+                <h1 class="font-black">$1,892</h1>
+                <p>Total interest</p>
+              </div>
+            </div>
+            <div class="flex items-center justify-center">
+              <button
+                class="px-14 md:px-6 py-2 bg-[#3F00FF] text-white text-xl rounded-md md:w-full"
+              >
+                i want to....
+              </button>
+            </div>
+          </div>
+
+          <div class="bg-gray-50 rounded-md shadow-lg my-4 p-6">
+            <h1 class="text-xl font-bold">Recent Transactions</h1>
+            <p class="text-gray-500 mt-6">2020-21-09</p>
+            <p class="font-bold">withdrawl Transfer to Bank -XX11</p>
+            <hr />
+            <div class="">
+              <p class="text-gray-500 mt-6">2020-21-09</p>
+              <p class="font-bold">withdrawl Transfer to Bank -XX11</p>
+            </div>
+            <hr />
+            <div class="">
+              <p class="text-gray-500 mt-6">2020-21-09</p>
+              <p class="font-bold">withdrawl Transfer to Bank -XX11</p>
+            </div>
+            <hr />
+          </div>
+        </div>
+      </div>
+
+      <!-- data section -->
+
+      <div
+        class=" w-full p-6 flex flex-col lg:flex-row gap-8"
+      >
+        <div class="lg:w-[75%]">
+          <!--  -->
+          <div>
+            <h1 class="text-blue-700">Retirement Income</h1>
+            <h1 class="text-2xl font-bold">Starting year 2026</h1>
+            <div class="my-6 md:flex md:items-center md:gap-10">
+              <div>
+                <h1 class="font-bold text-2xl">$300,000</h1>
+                <p class="text-gray-500 pb-4 border-b border-b-blue-500">
+                  My goal
+                </p>
+              </div>
+              <div class="my-4 flex items-center gap-10">
+                <div class="">
+                  <h1 class="font-bold text-xl">50%</h1>
+                  <p class="text-gray-500 border-b border-b-blue-500 pb-4">
+                    Goal Achieved
+                  </p>
+                </div>
+                <div>
+                  <h1 class="font-bold text-xl">k 300</h1>
+                  <p class="text-gray-500 border-b border-b-blue-500 pb-4">
+                    Est,Monthly Income
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h1 class="text-2xl font-bold">Contributions Overtime</h1>
+          <div class="my-4 flex items-center gap-6">
+            <div class="md:flex md:items-center md:gap-2">
+              <div class="h-4 w-6 bg-blue-600 rounded-lg"></div>
+              <p class="text-gray-500 my-2">Employer</p>
+              <h1 class="text-sm font-bold">$73,500</h1>
+            </div>
+            <div class="md:flex md:items-center md:gap-2">
+              <div class="h-4 w-6 bg-blue-400 rounded-lg"></div>
+              <p class="text-gray-500 my-2">Employee</p>
+              <h1 class="text-sm font-bold">$52,500</h1>
+            </div>
+            <div class="md:flex md:items-center md:gap-2">
+              <div class="h-4 w-6 bg-blue-200 rounded-lg"></div>
+              <p class="text-gray-500 my-2">Total Interest</p>
+              <h1 class="text-sm font-bold">$276,500</h1>
+            </div>
+          </div>
+
+          <!-- Chart section -->
+          <div class="w-full">
+            <canvas id="cookieChart" width="250" height="120"></canvas>
+          </div>
+
+          <!-- small Chart section -->
+          <div>
+            <h1 class="font-bold mt-6">How do i compere my peers?</h1>
+            <p class="text-gray-500 text-sm">
+              These numbers represents current goal achievements
+            </p>
+          </div>
+
+          <!--  -->
+          <div class=" mt-6"> 
+           <div>
+            <div class="flex items-center gap-4 border-b-2 pb-4">
+              <h1 class="font-bold">Age</h1>
+              <select>
+                <option value="1 ">under 30</option>
+                <option value="2 ">under 40</option>
+                <option value="3 ">under 50</option>
+              </select>
+            </div>
+            <div class="flex items-center gap-4 my-4 border-b-2 pb-4 ">
+              <h1 class="font-bold">Salary</h1>
+              <select>
+                <option value="1 ">k20-k30</option>
+                <option value="2 ">k30-k40</option>
+                <option value="3 ">k40-k50</option>
+              </select>
+            </div>
+            <div class="flex items-center gap-4 border-b-2 pb-4">
+              <h1 class="font-bold">Gender</h1>
+              <select>
+                <option value="1 ">Male</option>
+                <option value="2 ">Female</option>
+                <option value="3 ">Other</option>
+              </select>
+            </div>
+           </div>
+          </div>
+
+          <!-- circular chart section -->
+          <div class="mt-10 flex items-center justify-around gap-8 p-4">
+             <div class="relative w-[33%] z-[-1]">
+             <div class="h-28 w-28 shadow-2xl rounded-full p-[23px] ">
+              <div class="h-16 w-16 shadow-inner rounded-full flex items-center justify-center ">
+                <h1 class="percentage-one">75%</h1>
+              </div>
+             </div>
+             <svg  class='absolute top-0' "http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+              <defs>
+                 <linearGradient id="GradientColor">
+                    <stop offset="0%" stop-color="#e91e63" />
+                    <stop offset="100%" stop-color="#673ab7" />
+                 </linearGradient>
+              </defs>
+              <circle class="circle-one" cx="56" cy="56" r="44" stroke-linecap="round" />
+            </svg>
+            <h1 class="ml-4 my-4">Average</h1>
+             </div>
+
+             <div class="relative w-[33%] z-[-1] ">
+              <div class="h-28 w-28  shadow-2xl rounded-full p-[23px] ">
+               <div class="h-16 w-16  shadow-inner rounded-full flex items-center justify-center ">
+                 <h1 class="percentage-two">75%</h1>
+               </div>
+              </div>
+              <svg  class='absolute top-0' "http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+               <defs>
+                  <linearGradient id="GradientColor">
+                     <stop offset="0%" stop-color="#e91e63" />
+                     <stop offset="100%" stop-color="#673ab7" />
+                  </linearGradient>
+               </defs>
+               <circle class="circle-two" cx="56" cy="56" r="44" stroke-linecap="round" />
+             </svg>
+             <h1 class="ml-8 my-4">Top</h1>
+              </div>
+
+              <div class="relative w-[33%] z-[-1] ">
+                <div class="h-28 w-28  shadow-2xl rounded-full p-[23px] ">
+                 <div class="h-16 w-16  shadow-inner rounded-full flex items-center justify-center ">
+                   <h1 class="percentage-three">55%</h1>
+                 </div>
+                </div>
+                <svg  class='absolute top-0' "http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                 <defs>
+                    <linearGradient id="GradientColor">
+                       <stop offset="0%" stop-color="#e91e63" />
+                       <stop offset="100%" stop-color="#673ab7" />
+                    </linearGradient>
+                 </defs>
+                 <circle class="circle-three" cx="56" cy="56" r="44" stroke-linecap="round" />
+               </svg>
+               <h1 class="ml-8 my-4">Me</h1>
+                </div>
+             
+          </div>
+          
+
+
+        </div>
+        <!-- border closed  -->
+
+        <!-- data section -2 division--Retirement strategy -->
+
+        <div
+          class="bg-gray-50 shadow-lg rounded-md p-6 h-[400px] lg:w-[25%] border-blue-400"
+        >
+          <h1 class="font-bold mb-2">Retirement strategy</h1>
+          <p class="my-2">Employee Contribution</p>
+          <div class="flex items-center gap-6 justify-around">
+            <input
+              type="range"
+              value="20"
+              class="slider-first cursor-pointer w-full"
+            />
+            <p class="demo-first"></p>
+          </div>
+
+          <p class="my-2">Retirement Age</p>
+          <div class="flex items-center gap-6 mb-2 justify-around">
+            <input
+              type="range"
+              value="20"
+              class="slider-second cursor-pointer w-full"
+            />
+            <p class="demo-second"></p>
+          </div>
+          <hr />
+          <div class="flex items-center gap-4 my-6 justify-around">
+            <p>Employee Contribution</p>
+            <p>8.4%</p>
+          </div>
+          <div class="flex items-center gap-20 justify-around">
+            <p>Interest Rate</p>
+            <p>5%</p>
+          </div>
+          <button
+            class="px-10 my-4 py-2 text-white rounded-md w-full bg-[#3F00FF]"
+          >
+            Update
+          </button>
+          <div class="flex items-center justify-center my-2 lg:my-6">
+            <button class="text-[#3F00FF] font-bold">
+              View Help Docs <i class="fa-solid fa-right-long"></i>
+            </button>
+          </div>
+          <div class="mt-20">
+            <h1>
+              Are you considering a <br /><span class="font-bold"
+                >Housing ?Advance</span
+              >
+            </h1>
+            <p class="my-4 text-gray-400 text-sm">
+              Limited Time Reduce Interest
+            </p>
+            <button class="text-[#3F00FF] font-bold">
+              Learn more <i class="fa-solid fa-right-long"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

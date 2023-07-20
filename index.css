@@ -1,0 +1,64 @@
+.circle-one {
+  fill: none;
+  stroke: rgb(5, 160, 70);
+  stroke-width: 20px;
+  stroke-dasharray:300;
+  stroke-dashoffset: 300;
+  animation: anim1 2s linear forwards;
+}
+.circle-two{
+  fill: none;
+  stroke: rgb(5, 160, 70);
+  stroke-width: 20px;
+  stroke-dasharray:300;
+  stroke-dashoffset: 300;
+  animation: anim2 2s linear forwards;
+}
+.circle-three{
+  fill: none;
+  stroke: rgb(5, 160, 70);
+  stroke-width: 20px;
+  stroke-dasharray:300;
+  stroke-dashoffset: 300;
+  animation: anim3 2s linear forwards;
+}
+@keyframes anim1 {
+  100% {
+    stroke-dashoffset: 140;
+  }
+}
+@keyframes anim2 {
+  100% {
+    stroke-dashoffset: 90;
+  }
+}
+@keyframes anim3 {
+  100% {
+    stroke-dashoffset: 170;
+  }
+}
+
+/* Input Range */
+
+input {
+  -webkit-appearance: none;
+  background: rgba(0, 110, 255, 0.763);
+  height: 4px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    background-color: white; /* Change this to your desired thumb color */
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border:2px solid black;
+    cursor: pointer;
+  }
+
+
+  /* For smaller screen nav menu effects */
+  .bg-nav{
+    background-color:#3F00FF;
+    color:white;
+  }
